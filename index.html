@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12332e">
+  <meta name="description" content="PocketStore: catálogo que funciona sin internet.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>PocketStore</title>
+</head>
+<body>
+  <!-- ===== APP SHELL: se carga al instante desde la caché ===== -->
+  <header class="topbar">
+    <h1 class="topbar__title">PocketStore</h1>
+    <span id="status" class="status" role="status" aria-live="polite">Comprobando…</span>
+  </header>
+
+  <main class="main">
+    <div class="tools">
+      <input id="search" class="tools__search" type="search" placeholder="Buscar por nombre o ciudad" aria-label="Buscar en el catálogo">
+      <button id="refresh" class="tools__btn" type="button">Actualizar</button>
+    </div>
+
+    <p id="message" class="message" hidden></p>
+
+    <!-- ===== CONTENIDO DINÁMICO: lo llena app.js ===== -->
+    <section id="catalog" class="catalog" aria-label="Catálogo">
+      <p class="message">Cargando catálogo…</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>PocketStore · Datos de JSONPlaceholder · Funciona sin conexión</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

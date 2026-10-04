@@ -1,0 +1,7 @@
+Guarda aquí tus capturas de pantalla (nombres sugeridos, ya enlazados en el README):
+01-estructura.png     -> Explorador de VS Code con los archivos
+02-app-online.png     -> App funcionando con internet
+03-devtools-sw.png    -> DevTools > Application > Service Workers (activado)
+04-devtools-cache.png -> DevTools > Application > Cache Storage
+05-app-offline.png    -> App funcionando con "Offline" activado
+06-instalacion.png    -> Opción de instalar la app (PWA)
